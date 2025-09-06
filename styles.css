@@ -25,7 +25,7 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #f4f8fb; /* Soft light blue for a fresh look */
+  background-color: #1b3061; /* Soft light blue for a fresh look */
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@ body {
 
 /* Add a slight shadow and rounded corners to each section for depth */
 section {
-  background: #fff; /* White background for sections */
+  background: #FFC907; /* White background for sections */
   border-radius: 12px; /* Rounded corners */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
   margin: 24px 10px; /* Space between sections */
@@ -45,7 +45,8 @@ section {
 .hero {
   position: relative; /* Needed for overlay */
   /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  /* Set the background image to the new web address provided by the user */
+  background-image: url('https://cdn2.dropmarkusercontent.com/52043/8b45d5ea20420b2a40229448bfb3db664d7071162a246e2e90ad543b9ed6751e/cw_Selects_4x5_30.jpg?Expires=1757188574&Signature=gveHfU1NqYS~EFAvH9HRSN6yFgsMa~RGP4Z1qQt9atefVr0Tqn6Bldo3XFLlQLzkSsrbkQVEHYyWmkTrACBAoKBPg4P8wq7mzoS~ZSarPighMi4Y9f2S-llAw812ZIWiHp7Hw11Pv2y6dJ2dpaBWDcMq1-W8-RrfUjrJ64242wPoh7PcZRI3fBUF6gpBW~DwsE29~UE~3Gi~uhPErBIe4KXYz0IgaphO1iPsUYRFE59nST4zUr8A0Agu2wCBxixtlcx4hEQv2iG~R4QDOuIox9Rf7IhwxQWPdO3AR0juJPHfc8irWz87VPCmOigBQgGKgAr19aYctFVOXAaZo1442Q__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -83,12 +84,13 @@ section {
   text-align: center;
   padding: 30px 20px;
 }
-
 /* Add accent color to section headings */
 h2 {
   color: #2E9DF7; /* Primary blue */
   margin-top: 0;
   font-weight: bold;
+  text-align: center;
+
 }
 
 /* Call-to-Action Section Styles */
@@ -106,7 +108,18 @@ h2 {
   border-radius: 10px;
   margin-bottom: 16px;
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
-}
+  }
+
+  /* Center the heading inside the impact text next to the paragraph */
+  .impact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .impact-text h2 {
+    text-align: center;
+  }
+
 
 /* Donate Button Styles */
 .donate-button {
